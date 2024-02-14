@@ -9,7 +9,7 @@ import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.datatype.XMLGregorianCalendar;
 
-@XmlRootElement(name = "GetCursOnDateXml", namespace = "http://web.cbr.ru/")
+@XmlRootElement(name = "GetCursOnDateXML", namespace = "http://web.cbr.ru/")
 @XmlAccessorType(XmlAccessType.FIELD)
 @Data
 public class GetCursOnDateXml {

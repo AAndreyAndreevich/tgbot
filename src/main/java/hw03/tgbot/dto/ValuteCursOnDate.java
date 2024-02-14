@@ -12,18 +12,18 @@ import javax.xml.bind.annotation.XmlRootElement;
 @Data
 public class ValuteCursOnDate {
 
-    @XmlElement(name = "name")
+    @XmlElement(name = "Vname")
     private String name;
 
-    @XmlElement(name = "nominal")
+    @XmlElement(name = "Vnominal")
     private int nominal;
 
-    @XmlElement(name = "course")
+    @XmlElement(name = "Vcourse")
     private double course;
 
-    @XmlElement(name = "code")
+    @XmlElement(name = "Vcode")
     private String code;
 
-    @XmlElement(name = "chCode")
+    @XmlElement(name = "VchCode")
     private String chCode;
 }

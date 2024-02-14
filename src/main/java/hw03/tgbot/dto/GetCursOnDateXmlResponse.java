@@ -8,11 +8,11 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 
-@XmlRootElement(name = "GetCursOnDateXmlResponse", namespace = "http://web.cbr.ru/")
+@XmlRootElement(name = "GetCursOnDateXMLResponse", namespace = "http://web.cbr.ru/")
 @XmlAccessorType(XmlAccessType.FIELD)
 @Data
 public class GetCursOnDateXmlResponse {
 
-    @XmlElement(name = "GetCursOnDateXmlResult", namespace = "http://web.cbr.ru/")
+    @XmlElement(name = "GetCursOnDateXMLResult", namespace = "http://web.cbr.ru/")
     private GetCursOnDateXmlResult getCursOnDateXmlResult;
 }

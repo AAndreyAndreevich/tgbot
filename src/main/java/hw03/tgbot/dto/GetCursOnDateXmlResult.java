@@ -6,7 +6,7 @@ import javax.xml.bind.annotation.*;
 import java.util.ArrayList;
 import java.util.List;
 
-@XmlRootElement(name = "GetCursOnDateXmlResult")
+@XmlRootElement(name = "GetCursOnDateXMLResult")
 @XmlAccessorType(XmlAccessType.FIELD)
 @Data
 public class GetCursOnDateXmlResult {
