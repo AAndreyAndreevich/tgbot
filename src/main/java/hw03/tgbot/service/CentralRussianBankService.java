@@ -1,6 +1,6 @@
 package hw03.tgbot.service;
 
-import hw03.tgbot.dto.GetCursOnDateXml;
+import hw03.tgbot.dto.GetCursOnDateXML;
 import hw03.tgbot.dto.GetCursOnDateXmlResponse;
 import hw03.tgbot.dto.ValuteCursOnDate;
 import org.springframework.beans.factory.annotation.Value;
@@ -19,7 +19,7 @@ public class CentralRussianBankService extends WebServiceTemplate {
     private String cbrApi;
 
     public List<ValuteCursOnDate> getCurrenciesFromCbr() throws DatatypeConfigurationException {
-        final GetCursOnDateXml getCursOnDateXml = new GetCursOnDateXml();
+        final GetCursOnDateXML getCursOnDateXml = new GetCursOnDateXML();
         GregorianCalendar cal = new GregorianCalendar();
         cal.setTime(new Date());
 

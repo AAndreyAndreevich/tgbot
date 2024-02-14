@@ -90,10 +90,8 @@ public class BotService extends TelegramLongPollingBot {
                 activeChatRepository.save(activeChat);
             }
 
-        } catch (TelegramApiException e) {
-            e.printStackTrace();
         } catch (Exception e) {
-            e.printStackTrace();
+            log.error("Произошла ошибка", e);
         }
     }
 

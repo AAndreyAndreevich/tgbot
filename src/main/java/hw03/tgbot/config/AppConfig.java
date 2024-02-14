@@ -1,6 +1,6 @@
 package hw03.tgbot.config;
 
-import hw03.tgbot.dto.GetCursOnDateXml;
+import hw03.tgbot.dto.GetCursOnDateXML;
 import hw03.tgbot.dto.GetCursOnDateXmlResponse;
 import hw03.tgbot.dto.GetCursOnDateXmlResult;
 import hw03.tgbot.dto.ValuteCursOnDate;
@@ -28,7 +28,7 @@ public class AppConfig {
         cbrService.setMessageFactory(newSajSoapMessageFactory);
 
         jaxb2Marshaller.setClassesToBeBound(
-                GetCursOnDateXml.class,
+                GetCursOnDateXML.class,
                 GetCursOnDateXmlResponse.class,
                 GetCursOnDateXmlResult.class,
                 ValuteCursOnDate.class);

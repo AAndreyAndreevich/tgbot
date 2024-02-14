@@ -7,8 +7,11 @@ import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.springframework.boot.test.context.SpringBootTest;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 @SpringBootTest
 @TestInstance(TestInstance.Lifecycle.PER_CLASS)
+
 class FinanceServiceTest {
 
     @InjectMocks
@@ -35,7 +38,7 @@ class FinanceServiceTest {
     public void addFinanceOperationAddIncomeTest() {
         String price = "200.0";
         String message = financeService.addFinanceOperation("/addincome", price, 500L);
-        Assertions.assertEquals("Доход в размере " + price + " был успешно добавлен", message);
+        assertEquals("Доход в размере " + price + " был успешно добавлен", message);
     }
 
     @DisplayName("non_ADD_INCOME_test")
@@ -43,6 +46,6 @@ class FinanceServiceTest {
     public void addFinanceOperationElseBranchTest() {
         String price = "200";
         String message = financeService.addFinanceOperation("/nan", price, 250L);
-        Assertions.assertEquals("Расход в размере " + price + " был успешно добавлен", message);
+        assertEquals("Расход в размере " + price + " был успешно добавлен", message);
     }
 }
